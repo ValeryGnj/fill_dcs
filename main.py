@@ -3,6 +3,7 @@ from docxtpl import DocxTemplate
 
 
 def main():
+    # открываем файл с данными в excel
     wb = openpyxl.load_workbook('apartment_rental_agreement.xlsx', data_only=True)
     sheet = wb['Список_клиентов']
 
