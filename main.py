@@ -5,6 +5,7 @@ from docxtpl import DocxTemplate
 def main():
     # открываем файл с данными в excel
     wb = openpyxl.load_workbook('apartment_rental_agreement.xlsx', data_only=True)
+    # получаем лист с данными
     sheet = wb['Список_клиентов']
 
     header_list = [item.value for row in sheet['B1':'AQ1'] for item in row if
